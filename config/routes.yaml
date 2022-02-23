@@ -1,0 +1,56 @@
+routing.api.login:
+    path: /api/login
+    controller: App\Controller\Api\MainController::index
+
+routing.api.user.save:
+    path: /api/user/save
+    controller: App\Controller\Api\UserController::save
+
+routing.api.language.list:
+    path: /api/language/list
+    controller: App\Controller\Api\LanguageController::list
+
+routing.api.lang-var.save:
+    path: /api/lang-var/save
+    controller: App\Controller\Api\LangVarController::save
+
+routing.api.lang-var.list:
+    path: /api/lang-var/list
+    controller: App\Controller\Api\LangVarController::list
+
+routing.api.lang-var.get:
+    path: /api/lang-var/get/{id}
+    controller: App\Controller\Api\LangVarController::getById
+    requirements:
+        id: '\d+'
+
+routing.api.lang-var.delete:
+    path: /api/lang-var/delete/{id}
+    controller: App\Controller\Api\LangVarController::delete
+    requirements:
+        id: '\d+'
+
+routing.api.all:
+    path: /api/{path}
+    defaults: { 
+        _controller: App\Controller\Api\MainController::notValidPath,
+        path: ''
+    }
+    requirements:
+        path: .*
+
+logout:
+    path: /logout
+
+index:
+    path: /
+    controller: App\Controller\MainController::index
+
+index.all:
+    path: /{path}
+    defaults: { 
+        _controller: App\Controller\MainController::index,
+        path: ''
+    }
+    requirements:
+        path: .*

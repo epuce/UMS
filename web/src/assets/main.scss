@@ -1,0 +1,18 @@
+html,
+.page {
+    background: $neutral-10;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-light {
+    background: $blue-10;
+
+    &:hover {
+        background: $blue-20;
+    }
+}

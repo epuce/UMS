@@ -1,0 +1,1 @@
+export default {"lv":{"lang_var_name":"Tulkojuma atslēgvārds","lang_var_lv_translation":"Latviskais tulkojums"},"eng":{"lang_var_name":"Translation keyword","lang_var_lv_translation":"Latvian translations "},"ru":{"lang_var_name":"Ключевое слово перевода","lang_var_lv_translation":"Латышские переводы"}}

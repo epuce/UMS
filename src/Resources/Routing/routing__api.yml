@@ -1,0 +1,9 @@
+api.user.login:
+   path: /login
+   methods: post
+   controller: App\Controller\Api\UserController::login
+
+api.user.register:
+   path: /save
+   methods: post
+   controller: App\Controller\Api\UserController::save
